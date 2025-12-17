@@ -7,9 +7,9 @@ function verificarLogin() {
   const errorEl = document.querySelector(".error");
 
   if (usuario === "admin" && senha === "admin") {
-    window.location.href = "/html/gestor.html";
+    window.location.href = "../html/gestor.html";
   } else if (usuario === "user" && senha === "user") {
-    window.location.href = "/html/trilhas.html";
+    window.location.href = "../html/trilhas.html";
   } else {
     errorEl.textContent = "Usuário ou senha incorretos!";
   }
@@ -44,7 +44,7 @@ function verificarQuiz(trilha) {
     }
 
     if (pontos === totalQuestoes) {
-      window.location.href = "/html/certificado.html";
+      window.location.href = "../html/certificado.html";
     } else {
       resultadoEl.textContent = `Você acertou ${pontos} de ${totalQuestoes} questões. Vamos tentar novamente?`;
     }

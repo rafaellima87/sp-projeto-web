@@ -15,9 +15,9 @@
     crossorigin="anonymous"
   >
 
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/script/script.js" defer></script>
-  <script defer src="/script/htmx.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../script/script.js" defer></script>
+  <script defer src="../script/htmx.min.js"></script>
 
 </head>
 
@@ -26,17 +26,17 @@
   <header>
     <nav class="menu">
       <div>
-        <a href="/html/trilhas.html">Trilhas</a>
-        <a href="/index.html">Sair</a>
+        <a href="./html/trilhas.html">Trilhas</a>
+        <a href="./index.html">Sair</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <template hx-get="/conteudos/gestor-topo.html" hx-target="#gestor-topo" hx-trigger="load"></template>
-    <template hx-get="/conteudos/gestor-filtro.html" hx-target="#gestor-filtro" hx-trigger="load"></template>
-    <template hx-get="/conteudos/gestor-botoes.html" hx-target="#gestor-botoes" hx-trigger="load"></template>
-    <template hx-get="/conteudos/rodape.html" hx-target="#footer" hx-trigger="load"></template>
+    <template hx-get="../conteudos/gestor-topo.html" hx-target="#gestor-topo" hx-trigger="load"></template>
+    <template hx-get="../conteudos/gestor-filtro.html" hx-target="#gestor-filtro" hx-trigger="load"></template>
+    <template hx-get="../conteudos/gestor-botoes.html" hx-target="#gestor-botoes" hx-trigger="load"></template>
+    <template hx-get="../conteudos/rodape.html" hx-target="#footer" hx-trigger="load"></template>
 
     <section id="gestor-topo"></section>
     <section id="gestor-filtro"></section>
