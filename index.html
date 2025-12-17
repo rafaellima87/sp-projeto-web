@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Silva’s Parrilla</title>
+
+  <link rel="icon" type="image/png" href="/img/logo.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <script src="/script/script.js"></script>
+  <script defer src="/script/htmx.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="menu">
+      <div>
+        <a href="/html/login.html">Login</a>
+        <a href="/html/cadastro.html">Cadastro</a>
+        <a href="/html/recuperarsenha.html">Recuperar senha</a>
+        <a href="/html/trilhas.html">Trilhas</a>
+        <a href="/html/referencias.html">Referências</a>
+      </div>
+    </nav>
+  </header>
+
+  <template hx-get="/conteudos/carrossel.html" hx-target="#carrossel" hx-trigger="load"></template>
+  <template hx-get="/conteudos/sobre-nos.html" hx-target="#sobre-nos" hx-trigger="load"></template>
+  <template hx-get="/conteudos/rodape.html" hx-target="#footer" hx-trigger="load"></template>
+
+  <main>
+    <section id="carrossel"></section>
+    <section id="sobre-nos"></section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  
+</body>
+</html>

@@ -1,0 +1,54 @@
+<section class="gestor-filtro py-4">
+    <div class="container">
+  
+      <nav class="gestor-menu d-flex justify-content-center flex-wrap gap-3 mb-4">
+        <button type="button" class="btn btn-primary">Usuários</button>
+        <button type="button" class="btn btn-primary">Tentativas</button>
+        <button type="button" class="btn btn-primary">Logins</button>
+      </nav>
+  
+      <section class="gestor-tabela">
+        <h2 class="text-center mb-3">Lista de Usuários</h2>
+  
+        <div class="table-responsive">
+          <table class="table table-bordered text-center align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Selecionar</th>
+                <th scope="col">Nome Completo</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Usuário</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Administrador</th>
+              </tr>
+            </thead>
+  
+            <tbody>
+              <tr>
+                <td>
+                  <input type="radio" name="usuario" value="admin">
+                </td>
+                <td>Admin User</td>
+                <td>000.000.000-00</td>
+                <td>admin</td>
+                <td>admin@silvaparrilla.com</td>
+                <td>(51) 99999-9999</td>
+                <td>Sim</td>
+              </tr>
+  
+              <tr>
+                <td>
+                  <input type="radio" name="usuario" value="teste">
+                </td>
+                <td>Teste User</td>
+                <td>111.111.111-11</td>
+                <td>teste</td>
+                <td>teste@silvaparrilla.com</td>
+                <td>(11) 98888-1111</td>
+                <td>Não</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
